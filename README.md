@@ -48,18 +48,9 @@ it with `PUF_STUDY_REVISION`. Figure-only reruns do not recompute study data:
 bash run_publication_study.sh figures publication
 ```
 
-Corrected empirical figures are written to a revisioned directory ending in
-`analysis_v2`; override that suffix with `PUF_FIGURE_REVISION`. The empirical
-analysis also emits transfer-frontier, crossover, and break-even CSV tables,
-plus a selected LaTeX break-even table.
-`run_transfer_study.sh` remains as a
-compatibility wrapper for the publication profile.
+Corrected empirical figures are written to a revisioned directory ending in `analysis_v2`; override that suffix with `PUF_FIGURE_REVISION`. The empirical analysis also emits transfer-frontier, crossover, and break-even CSV tables, plus a selected LaTeX break-even table.
 
-The empirical CSV loader streams only `challenge_id`, `sample_id`, `device_id`,
-`slice`, and `response`. See
-[the empirical data contract](docs/empirical_transfer.md#input-data-contract)
-for adaptation guidance, cache semantics, data splits, metric definitions, and
-source-similarity controls.
+The empirical CSV loader streams only `challenge_id`, `sample_id`, `device_id`, `slice`, and `response`. See [the empirical data contract](docs/empirical_transfer.md#input-data-contract) for adaptation guidance, cache semantics, data splits, metric definitions, and source-similarity controls.
 
 ## Evaluation conventions
 
